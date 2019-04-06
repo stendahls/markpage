@@ -8,7 +8,7 @@ const uglifyjs = require( 'uglify-js' );
 
 const rawReplace = require( './modules/raw-replace.js' );
 
-let wrapper = fs.readFileSync( './wrapper.html', 'utf8' );
+let wrapper = fs.readFileSync( path.join( __dirname, 'wrapper.html' ), 'utf8' );
 let css = fs.readFileSync( path.join( __dirname, 'node_modules', 'github-markdown-css', 'github-markdown.css' ), 'utf8' );
 let highlightCss = fs.readFileSync( path.join( __dirname, 'node_modules', 'highlight.js', 'styles', 'default.css' ), 'utf8' );
 let highlightjs = fs.readFileSync( path.join( __dirname, 'node_modules', 'highlight.js', 'lib', 'highlight.js' ), 'utf8' );
