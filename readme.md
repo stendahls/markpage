@@ -11,7 +11,7 @@ $ npm install markpage
 ## Usage
 
 ```js
-const markpage = require( 'markpage' );
+const markpage = require( '@stendahls/markpage' );
 
 const markdown = fs.readFileSync( './readme.md', 'utf8' );
 const html = markpage( markdown, 'MyTitle' );
