@@ -9,9 +9,9 @@ const uglifyjs = require( 'uglify-js' );
 const rawReplace = require( './modules/raw-replace.js' );
 
 let wrapper = fs.readFileSync( path.join( __dirname, 'wrapper.html' ), 'utf8' );
-let css = fs.readFileSync( path.join( __dirname, '..', 'github-markdown-css', 'github-markdown.css' ), 'utf8' );
-let highlightCss = fs.readFileSync( path.join( __dirname, '..', 'highlight.js', 'styles', 'default.css' ), 'utf8' );
-let highlightjs = fs.readFileSync( path.join( __dirname, '..', 'highlight.js', 'lib', 'highlight.js' ), 'utf8' );
+let css = fs.readFileSync( path.join( __dirname, '..', '..', 'github-markdown-css', 'github-markdown.css' ), 'utf8' );
+let highlightCss = fs.readFileSync( path.join( __dirname, '..', '..', 'highlight.js', 'styles', 'default.css' ), 'utf8' );
+let highlightjs = fs.readFileSync( path.join( __dirname, '..', '..', 'highlight.js', 'lib', 'highlight.js' ), 'utf8' );
 
 marked.setOptions( {
     highlight: ( code ) => {
