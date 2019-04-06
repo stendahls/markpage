@@ -17,6 +17,13 @@ const markdown = fs.readFileSync( './readme.md', 'utf8' );
 const html = markpage( markdown, 'MyTitle' );
 ```
 
+And then with something like express
+```js
+app.get( '/', ( request, response ) => {
+    response.send( html );
+} );
+```
+
 ### API
 Returns a full HTML page with styling as a string.
 
