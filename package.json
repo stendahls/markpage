@@ -1,6 +1,6 @@
 {
   "name": "@stendahls/markpage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Throw in markdown, get a self-contained HTML file in return.",
   "main": "index.js",
   "repository": {
