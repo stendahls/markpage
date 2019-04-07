@@ -5,7 +5,7 @@ Throw in markdown, get a self-contained HTML file in return.
 ## Install
 
 ```
-$ npm install markpage
+$ npm install @stendahls/markpage
 ```
 
 ## Usage
